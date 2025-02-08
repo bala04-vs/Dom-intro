@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css"></link>
+</head>
+<body>
+    <div class="div1">
+        <h1 class="num1"id="number">0</h1>
+        <aside
+        class="aside"> <button class="plus" onclick="plus()">+</button>
+            <button class="minus" onclick="minus()">-</button></aside>
+
+            <button class="reset" onclick="res()">reset</button>
+       
+    </div>
+
+    <script>
+
+        let n=document.getElementById("number");
+         let x=0;
+         function plus(){
+             x+=1;
+            console.log(x)
+           n.innerHTML=x;
+           n.style.color="green"
+        
+        
+        
+        
+        }
+
+
+         function minus(){
+            x-=1;
+            console.log(x)
+            n.innerHTML=x;
+            n.style.color="red";
+         }
+
+
+         function res(){
+            n.innerText="0";
+            n.style.color="black";
+         }
+
+         
+         
+         
+         
+         
+         
+         
+          
+
+            
+         
+
+
+
+    </script>
+</body>
+</html>
